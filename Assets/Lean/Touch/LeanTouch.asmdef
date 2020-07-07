@@ -1,0 +1,8 @@
+{
+    "name": "LeanTouch",
+    "references": [
+        "LeanCommon"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
