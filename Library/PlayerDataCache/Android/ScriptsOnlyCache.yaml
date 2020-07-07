@@ -13,6 +13,8 @@ ScriptsOnlyBuild:
     - easyar.RenderCameraController
     - easyar.VideoCameraDevice
     LeanTouch.dll:
+    - Lean.Touch.LeanDragTranslate
+    - Lean.Touch.LeanPinchScale
     - Lean.Touch.LeanTouch
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -28,6 +30,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
+    YoutubePlayer.dll:
+    - YoutubePlayer.YoutubePlayer
   sceneClasses:
     Assets/Main/Scenes/Main.unity:
     - Class: 1
@@ -61,45 +65,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 644}
+      Script: {instanceID: 650}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11416}
+      Script: {instanceID: 11652}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11732}
     - Class: 114
-      Script: {instanceID: 11756}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 11804}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 11876}
+      Script: {instanceID: 12738}
     - Class: 114
-      Script: {instanceID: 11946}
+      Script: {instanceID: 13334}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 13358}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 13492}
     - Class: 114
-      Script: {instanceID: 12350}
+      Script: {instanceID: 13620}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 13926}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 13962}
     - Class: 114
-      Script: {instanceID: 12620}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 14142}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 14332}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 14580}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 14808}
     - Class: 114
-      Script: {instanceID: 13210}
+      Script: {instanceID: 14980}
+    - Class: 114
+      Script: {instanceID: 14988}
+    - Class: 114
+      Script: {instanceID: 15322}
+    - Class: 114
+      Script: {instanceID: 15332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -351,6 +361,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 5d429a583ed70c7c705e131b98955193
+    assemblyName: YoutubePlayer.dll
+    namespaceName: YoutubePlayer
+    className: YoutubeCaptions
+  - hash:
+      serializedVersion: 2
       Hash: 25f7e4fa39b63a43c88703c0e2706bbc
     assemblyName: Assembly-CSharp.dll
     namespaceName: easyar
@@ -373,12 +389,6 @@ ScriptsOnlyBuild:
     assemblyName: LeanTouch.dll
     namespaceName: Lean.Touch
     className: LeanFingerSwipe
-  - hash:
-      serializedVersion: 2
-      Hash: 47c337c5861d50f48ff0722a57c16cc8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: ImageTracking_Video
-    className: VideoPlayerAgent
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -405,6 +415,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AllSamplesLauncher
+    className: SceneRecorder
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -415,6 +431,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b93947824331acf72530819611075475
+    assemblyName: YoutubePlayer.dll
+    namespaceName: YoutubePlayer
+    className: DownloadYoutubeVideo
   - hash:
       serializedVersion: 2
       Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
@@ -495,6 +517,12 @@ ScriptsOnlyBuild:
     className: ImageTrackerFrameFilter
   - hash:
       serializedVersion: 2
+      Hash: 6f2ce5a82cc754b157b441025ef50aab
+    assemblyName: YoutubePlayer.dll
+    namespaceName: YoutubePlayer
+    className: YoutubePlayer
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -565,6 +593,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: easyar
     className: EasyARSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 61a4f7ef244c2f230755db2af2ce0e3b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: ImageTracking_Video
+    className: VideoPlayerAgent
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -639,6 +673,12 @@ ScriptsOnlyBuild:
     className: LeanLinkTo
   - hash:
       serializedVersion: 2
+      Hash: 0c45cc5e7e20b25f1a5c64afb54e70fc
+    assemblyName: YoutubePlayer.dll
+    namespaceName: YoutubePlayer
+    className: VideoPlayerProgress
+  - hash:
+      serializedVersion: 2
       Hash: da23185e299b582cbcc71f738eda32f2
     assemblyName: Assembly-CSharp.dll
     namespaceName: easyar
@@ -667,6 +707,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 0216bf55412b208d48c2a91bcf85de05
+    assemblyName: YoutubePlayer.dll
+    namespaceName: YoutubePlayer
+    className: PanoramicSkyboxVideo
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -739,6 +785,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: ImageTracking_Video
     className: ImageTargetVideoSample
+  - hash:
+      serializedVersion: 2
+      Hash: 8860633d29a22ff64e02e18da3716cdf
+    assemblyName: YoutubePlayer.dll
+    namespaceName: UnityTemplateProjects
+    className: SimpleCameraController
   - hash:
       serializedVersion: 2
       Hash: 253ead52687ebcf6bf2e6bb68055e28a
@@ -886,4 +938,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Main/Scenes/Main.unity
-  playerPath: D:/PianoTunesAR/PianoTunesARTestQ.apk
+  playerPath: C:/Users/farru/OneDrive/Desktop/PianoTunesAR.apk

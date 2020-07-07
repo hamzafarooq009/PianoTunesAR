@@ -17,13 +17,13 @@ namespace ImageTracking_Video
     [RequireComponent(typeof(MeshRenderer), typeof(UnityEngine.Video.VideoPlayer))]
     public class VideoPlayerAgent : MonoBehaviour
     {
-        public string VideoPath; //test.mp4
+        // public string VideoPath; //test.mp4
         public bool FitTarget = true;
 
         private ImageTargetController controller;
         private MeshRenderer meshRenderer;
-        private UnityEngine.Video.VideoPlayer player;
-        private bool ready;
+        public UnityEngine.Video.VideoPlayer player;
+        private bool ready = true;
         private bool prepared;
         private bool found;
 
@@ -32,50 +32,6 @@ namespace ImageTracking_Video
             controller = GetComponentInParent<ImageTargetController>();
             meshRenderer = GetComponent<MeshRenderer>();
             StatusChanged();
-
-            player = GetComponent<UnityEngine.Video.VideoPlayer>();
-            player.source = VideoSource.Url;
-
-            var path = Application.streamingAssetsPath + "/" + VideoPath;
-
-            if (Application.platform == RuntimePlatform.Android)
-            {
-                path = Application.persistentDataPath + "/" + VideoPath;
-                /*
-                {
-                    
-                    int sdkVersion = 0;
-#if UNITY_ANDROID && !UNITY_EDITOR
-                    using (var buildVersion = new AndroidJavaClass("android.os.Build$VERSION"))
-                    {
-                        sdkVersion = buildVersion.GetStatic<int>("SDK_INT");
-                    }
-#endif
-                    if (sdkVersion >= 29)
-                    {
-                        // GUIPopup.EnqueueMessage("Use web video to workaround Unity VideoPlayer bug on Android Q\nthe video play may be slow", 5);
-                        path = "https://staticfile-cdn.sightp.com/easyar/" + Path.GetFileName(VideoPath);
-                    }
-                }
-                */
-                
-            }
-
-            // Note: Use the Unity VideoPlayer in your own way.
-            // We use video file in StreamingAssets in the samples only to keep compatiblity.
-            // Some versions of Unity will have strange behaviors if video in resources.
-            if (Application.platform == RuntimePlatform.Android && !File.Exists(path) && !path.StartsWith("https://"))
-            {
-                StartCoroutine(FileUtil.LoadFile(VideoPath, PathType.StreamingAssets, (data) =>
-                {
-                    StartCoroutine(WriteFile(path, data));
-                }));
-            }
-            else
-            {
-                player.url = FileUtil.PathToUrl(path);
-                ready = true;
-            }
 
             controller.TargetFound += () =>
             {
@@ -97,37 +53,6 @@ namespace ImageTracking_Video
                 prepared = true;
                 StatusChanged();
             };
-        }
-
-        private IEnumerator WriteFile(string path, byte[] data)
-        {
-            if (data == null || data.Length <= 0)
-            {
-                yield break;
-            }
-
-            bool finished = false;
-            EasyARController.Instance.Worker.Run(() =>
-            {
-                var dir = Path.GetDirectoryName(path);
-                if (!Directory.Exists(dir))
-                {
-                    Directory.CreateDirectory(dir);
-                }
-                if (!File.Exists(path))
-                {
-                    File.WriteAllBytes(path, data);
-                }
-                finished = true;
-            });
-
-            while (!finished)
-            {
-                yield return 0;
-            }
-            player.url = FileUtil.PathToUrl(path);
-            ready = true;
-            StatusChanged();
         }
 
         private void StatusChanged()
