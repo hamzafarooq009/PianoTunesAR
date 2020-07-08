@@ -1,8 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AddObjectToList
     - ImageTracking_Video.ImageTargetVideoSample
     - ImageTracking_Video.VideoPlayerAgent
+    - UI
     - easyar.ARSession
     - easyar.CameraImageRenderer
     - easyar.EasyARController
@@ -12,6 +14,7 @@ ScriptsOnlyBuild:
     - easyar.ImageTrackerFrameFilter
     - easyar.RenderCameraController
     - easyar.VideoCameraDevice
+    - start
     LeanTouch.dll:
     - Lean.Touch.LeanDragTranslate
     - Lean.Touch.LeanPinchScale
@@ -29,10 +32,77 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Text
     YoutubePlayer.dll:
     - YoutubePlayer.YoutubePlayer
   sceneClasses:
+    Assets/Main/Scenes/LandingUI.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 650}
+    - Class: 114
+      Script: {instanceID: 14476}
+    - Class: 114
+      Script: {instanceID: 14862}
+    - Class: 114
+      Script: {instanceID: 14942}
+    - Class: 114
+      Script: {instanceID: 15198}
+    - Class: 114
+      Script: {instanceID: 15796}
+    - Class: 114
+      Script: {instanceID: 16244}
+    - Class: 114
+      Script: {instanceID: 16702}
+    - Class: 114
+      Script: {instanceID: 17116}
+    - Class: 114
+      Script: {instanceID: 17134}
+    - Class: 114
+      Script: {instanceID: 17350}
+    - Class: 114
+      Script: {instanceID: 17720}
+    - Class: 114
+      Script: {instanceID: 18224}
+    - Class: 114
+      Script: {instanceID: 18522}
+    - Class: 114
+      Script: {instanceID: 18532}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Main/Scenes/Main.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -65,51 +135,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 650}
+      Script: {instanceID: 14476}
     - Class: 114
-      Script: {instanceID: 11222}
+      Script: {instanceID: 14862}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 14942}
     - Class: 114
-      Script: {instanceID: 11652}
+      Script: {instanceID: 15556}
     - Class: 114
-      Script: {instanceID: 11732}
+      Script: {instanceID: 15796}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 15948}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 16544}
     - Class: 114
-      Script: {instanceID: 12738}
+      Script: {instanceID: 16568}
     - Class: 114
-      Script: {instanceID: 13334}
+      Script: {instanceID: 16702}
     - Class: 114
-      Script: {instanceID: 13358}
+      Script: {instanceID: 16830}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 17170}
     - Class: 114
-      Script: {instanceID: 13620}
+      Script: {instanceID: 17338}
     - Class: 114
-      Script: {instanceID: 13926}
+      Script: {instanceID: 17348}
     - Class: 114
-      Script: {instanceID: 13962}
+      Script: {instanceID: 17536}
     - Class: 114
-      Script: {instanceID: 14132}
+      Script: {instanceID: 17720}
     - Class: 114
-      Script: {instanceID: 14142}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 18008}
     - Class: 114
-      Script: {instanceID: 14580}
+      Script: {instanceID: 18180}
     - Class: 114
-      Script: {instanceID: 14808}
+      Script: {instanceID: 18188}
     - Class: 114
-      Script: {instanceID: 14980}
-    - Class: 114
-      Script: {instanceID: 14988}
-    - Class: 114
-      Script: {instanceID: 15322}
-    - Class: 114
-      Script: {instanceID: 15332}
+      Script: {instanceID: 18532}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,18 +195,6 @@ ScriptsOnlyBuild:
     - Class: 328
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: caa533b001ae39b864ba8425019e2268
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Shadow
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 40bec6a5d10fc0f6c31085e81ea4bf82
@@ -385,6 +437,12 @@ ScriptsOnlyBuild:
     className: LeanPlane
   - hash:
       serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
       Hash: ee6a55fd6f4f0f59591afbf34813acf4
     assemblyName: LeanTouch.dll
     namespaceName: Lean.Touch
@@ -473,6 +531,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: c307406b74214f79ef78ac3ecb282176
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddObjectToList
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -661,6 +725,12 @@ ScriptsOnlyBuild:
     className: ImageTargetController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: start
+  - hash:
+      serializedVersion: 2
       Hash: 253ead52687ebcf6bf2e6bb68055e28a
     assemblyName: LeanTouch.dll
     namespaceName: Lean.Touch
@@ -719,6 +789,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -791,6 +867,12 @@ ScriptsOnlyBuild:
     assemblyName: YoutubePlayer.dll
     namespaceName: UnityTemplateProjects
     className: SimpleCameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 1439455b49a4fe1c0ebe192ca77d573e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UI
   - hash:
       serializedVersion: 2
       Hash: 253ead52687ebcf6bf2e6bb68055e28a
@@ -937,5 +1019,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Main/Scenes/LandingUI.unity
   - Assets/Main/Scenes/Main.unity
-  playerPath: C:/Users/farru/OneDrive/Desktop/PianoTunesAR.apk
+  playerPath: D:/PianoTunesAR/PianoTunesARv0.5.apk
