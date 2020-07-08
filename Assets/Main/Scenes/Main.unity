@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 140855923}
   - component: {fileID: 140855922}
   m_Layer: 5
-  m_Name: SwitchRatioFit
+  m_Name: HeightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 230, y: 107}
-  m_SizeDelta: {x: 340, y: 115}
+  m_AnchoredPosition: {x: 90.6, y: 26.8}
+  m_SizeDelta: {x: 160, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140855922
 MonoBehaviour:
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2109833390}
-        m_MethodName: ChangeVideoAspectRatio
+      - m_Target: {fileID: 1743819969}
+        m_MethodName: changeHeight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -289,8 +289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 604, y: -117}
-  m_SizeDelta: {x: 340, y: 115}
+  m_AnchoredPosition: {x: 265, y: -27}
+  m_SizeDelta: {x: 160, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160879707
 MonoBehaviour:
@@ -668,11 +668,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d54323c94c164de478170d5e7d0273be, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 4
-    m_MaxSize: 40
+    m_MaxSize: 30
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -904,11 +904,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d54323c94c164de478170d5e7d0273be, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 30
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1065,7 +1065,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d54323c94c164de478170d5e7d0273be, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 4
@@ -1076,7 +1076,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Switch Ratio
+  m_Text: 'Height: 1.0'
 --- !u!222 &1742625195
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1212,6 +1212,7 @@ MonoBehaviour:
   FitTarget: 1
   player: {fileID: 1743819967}
   textDisplay: {fileID: 1276890149}
+  heightDisplay: {fileID: 1742625192}
   visibility: 0.5
   visibilityOptions:
   - 0.75
@@ -1219,6 +1220,14 @@ MonoBehaviour:
   - 0.25
   - 0.1
   - 0.05
+  height: 1
+  heightOptions:
+  - 1
+  - 1.1
+  - 1.25
+  - 1.5
+  - 1.75
+  - 2
 --- !u!33 &1743819970
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1431,8 +1440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 230, y: -116.5}
-  m_SizeDelta: {x: 340, y: 115}
+  m_AnchoredPosition: {x: 90.6, y: -27}
+  m_SizeDelta: {x: 160, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1765102736
 MonoBehaviour:
@@ -1646,6 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f11f1e88ab74048a0d51339538df88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
 --- !u!4 &2109833391
 Transform:
   m_ObjectHideFlags: 0
