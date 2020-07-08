@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768fe280903842fdaa2a016022624f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://youtu.be/9NTGSPKKH50
+  youtubeUrl: 
 --- !u!1001 &1910973111
 PrefabInstance:
   m_ObjectHideFlags: 0

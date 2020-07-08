@@ -8,7 +8,8 @@ using UnityEngine.Video;
 using YoutubeExplode;
 using YoutubeExplode.Models.ClosedCaptions;
 using YoutubeExplode.Models.MediaStreams;
-
+using System.Collections.Generic; 
+using System.Text;
 namespace YoutubePlayer
 {
     /// <summary>
@@ -41,6 +42,9 @@ namespace YoutubePlayer
         {
             youtubeClient = new YoutubeClient();
             videoPlayer = GetComponent<VideoPlayer>();
+            // youtubeUrl = "https://www.youtube.com/watch?v=Rj9GT3Wvve8";
+            // string player = PlayerPrefs.GetString("youtubeUrl");
+            // textDisplay.GetComponent<Text>().text = "Playing " + theName;
         }
 
         private async void OnEnable()
