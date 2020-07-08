@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ImageTracking_Video.ImageTargetVideoSample
     - ImageTracking_Video.VideoPlayerAgent
     - UI
     - easyar.ARSession
@@ -61,29 +60,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11436}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11652}
     - Class: 114
-      Script: {instanceID: 11910}
+      Script: {instanceID: 11732}
     - Class: 114
-      Script: {instanceID: 12162}
+      Script: {instanceID: 11988}
     - Class: 114
-      Script: {instanceID: 12766}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 13696}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 13910}
     - Class: 114
-      Script: {instanceID: 14124}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14340}
+      Script: {instanceID: 14146}
     - Class: 114
-      Script: {instanceID: 15242}
+      Script: {instanceID: 15028}
     - Class: 114
-      Script: {instanceID: 15546}
+      Script: {instanceID: 15328}
     - Class: 114
-      Script: {instanceID: 15554}
+      Script: {instanceID: 15338}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -134,45 +133,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11436}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11652}
     - Class: 114
-      Script: {instanceID: 11910}
+      Script: {instanceID: 11732}
     - Class: 114
-      Script: {instanceID: 12522}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 12766}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12738}
     - Class: 114
-      Script: {instanceID: 13538}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13562}
+      Script: {instanceID: 13360}
     - Class: 114
-      Script: {instanceID: 13696}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 13826}
+      Script: {instanceID: 13622}
     - Class: 114
-      Script: {instanceID: 14160}
+      Script: {instanceID: 13964}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14134}
     - Class: 114
-      Script: {instanceID: 14338}
+      Script: {instanceID: 14144}
     - Class: 114
-      Script: {instanceID: 14340}
+      Script: {instanceID: 14146}
     - Class: 114
-      Script: {instanceID: 14536}
+      Script: {instanceID: 14336}
     - Class: 114
-      Script: {instanceID: 14784}
+      Script: {instanceID: 14584}
     - Class: 114
-      Script: {instanceID: 15018}
+      Script: {instanceID: 14812}
     - Class: 114
-      Script: {instanceID: 15196}
+      Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 14992}
     - Class: 114
-      Script: {instanceID: 15554}
+      Script: {instanceID: 15338}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -664,7 +663,7 @@ ScriptsOnlyBuild:
     className: EasyARSettings
   - hash:
       serializedVersion: 2
-      Hash: 65d4edee2fe3b6a07114293b375e274a
+      Hash: 29b06b1300758ea64a43b15d1df277b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: ImageTracking_Video
     className: VideoPlayerAgent
@@ -856,12 +855,6 @@ ScriptsOnlyBuild:
     className: LeanDragTranslate
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: ImageTracking_Video
-    className: ImageTargetVideoSample
-  - hash:
-      serializedVersion: 2
       Hash: 8860633d29a22ff64e02e18da3716cdf
     assemblyName: YoutubePlayer.dll
     namespaceName: UnityTemplateProjects
@@ -1020,4 +1013,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Main/Scenes/LandingUI.unity
   - Assets/Main/Scenes/Main.unity
-  playerPath: D:/PianoTunesAR/PianoTunesARv1.0.apk
+  playerPath: D:/PianoTunesAR/PianoTunesARv1.2.apk
