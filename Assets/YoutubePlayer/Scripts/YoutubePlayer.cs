@@ -21,7 +21,7 @@ namespace YoutubePlayer
         /// <summary>
         /// Youtube url (e.g. https://www.youtube.com/watch?v=VIDEO_ID)
         /// </summary>
-        public string youtubeUrl;
+        private static string youtubeUrl;
 
         /// <summary>
         /// VideoStartingDelegate 
@@ -42,14 +42,14 @@ namespace YoutubePlayer
         {
             youtubeClient = new YoutubeClient();
             videoPlayer = GetComponent<VideoPlayer>();
-            // youtubeUrl = "https://www.youtube.com/watch?v=Rj9GT3Wvve8";
-            // string player = PlayerPrefs.GetString("youtubeUrl");
-            // textDisplay.GetComponent<Text>().text = "Playing " + theName;
+            // youtubeUrl =  PlayerPrefs.GetString("youtubeUrl");
         }
 
         private async void OnEnable()
         {
             if (videoPlayer.playOnAwake)
+                youtubeUrl =  PlayerPrefs.GetString("youtubeUrl");
+                Debug.Log(youtubeUrl);
                 await PlayVideoAsync();
         }
 

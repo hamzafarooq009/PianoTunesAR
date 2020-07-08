@@ -15,6 +15,11 @@ namespace ImageTracking_Video
         private ImageTargetController controller;
         private MeshRenderer meshRenderer;
         public UnityEngine.Video.VideoPlayer player;
+        public GameObject textDisplay;
+        public float visibility = 0.5f;
+        private int visIndex = 0;
+        public float[ ] visibilityOptions = new float[ ]{0.75f, 0.5f, 0.25f, 0.1f, 0.05f} ;
+
         private bool ready = true;
         private bool prepared;
         private bool found;
@@ -65,6 +70,20 @@ namespace ImageTracking_Video
                 meshRenderer.enabled = false;
                 player.Pause();
             }
+        }
+
+
+        public void changeVisibility()
+        {
+            if (visIndex == visibilityOptions.Length) {
+                visIndex = 0;
+            }
+
+            visibility = visibilityOptions[visIndex];
+            visIndex += 1;
+
+            textDisplay.GetComponent<UnityEngine.UI.Text>().text = "Visibility: " + visibility.ToString();
+            meshRenderer.material.color = new Color(1.0f,1.0f,1.0f, visibility);
         }
     }
 }
