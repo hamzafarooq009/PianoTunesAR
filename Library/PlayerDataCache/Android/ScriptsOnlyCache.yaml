@@ -78,11 +78,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14146}
     - Class: 114
-      Script: {instanceID: 15028}
+      Script: {instanceID: 15026}
     - Class: 114
-      Script: {instanceID: 15328}
+      Script: {instanceID: 15326}
     - Class: 114
-      Script: {instanceID: 15338}
+      Script: {instanceID: 15336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,9 +169,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 14992}
-    - Class: 114
-      Script: {instanceID: 15338}
+      Script: {instanceID: 15336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,8 +185,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 258
       Script: {instanceID: 0}
     - Class: 328
       Script: {instanceID: 0}
@@ -1013,4 +1009,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Main/Scenes/LandingUI.unity
   - Assets/Main/Scenes/Main.unity
-  playerPath: D:/PianoTunesAR/PianoTunesARv1.2.apk
+  playerPath: D:/PianoTunesAR/PianoTunesARv1.2.5.apk
