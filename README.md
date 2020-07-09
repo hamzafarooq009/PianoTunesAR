@@ -3,7 +3,7 @@
 ## <a href="https://github.com/hamzafarooq009/PianoTunesAR/releases/tag/APK"><img src="./Multimedia/download.png" height="30"></a>
 
 An AR based video player for Piano tutorials built in Unity.
-Category: Best Practical/Scalable, Music Tech
+*Category:* Best Practical/Scalable, Music Tech
 
 ![Demo](/Multimedia/Demo.gif)
 
