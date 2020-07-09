@@ -581,7 +581,7 @@ ScriptsOnlyBuild:
     className: ImageTrackerFrameFilter
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6f2ce5a82cc754b157b441025ef50aab
     assemblyName: YoutubePlayer.dll
     namespaceName: YoutubePlayer
     className: YoutubePlayer
@@ -1009,4 +1009,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Main/Scenes/LandingUI.unity
   - Assets/Main/Scenes/Main.unity
-  playerPath: D:/PianoTunesAR/PianoTunesARv1.2.5.apk
+  playerPath: D:/PianoTunesAR/PianoTunesARv1.3.apk

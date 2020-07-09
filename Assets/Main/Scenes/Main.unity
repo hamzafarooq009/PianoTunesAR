@@ -1149,7 +1149,7 @@ VideoPlayer:
   - {fileID: 1743819971}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://r4---sn-4pcxgapo3-aixs.googlevideo.com/videoplayback?expire=1594265317&ei=hToGX8vqBsLsWdiJsfgE&ip=27.255.13.1&id=o-AOCvKGoKHHSHOG4Zm5D0a5docGKFozvAodegbZ2a1GB4&itag=18&source=youtube&requiressl=yes&mh=6P&mm=31%2C29&mn=sn-4pcxgapo3-aixs%2Csn-2uja-3ipd&ms=au%2Crdu&mv=m&mvi=4&pl=24&initcwndbps=170000&vprv=1&mime=video%2Fmp4&gir=yes&clen=8545318&ratebypass=yes&dur=204.103&lmt=1554560690569060&mt=1594243596&fvip=7&c=WEB&txp=2211222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAJFY_alVdtpNRPmzjESG2zXUKjV3akvQvGZzLjKhBubIAiEAmIb_YlKha99LdJGisLrF-rmTpoPqjRIvO2zMuhBD3c8%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgQe9TIChT_Jhp8nDE6uF9pMPvLh5T92o0snXKEn48My0CIBhlDe4NvCF4DAZ1T8_y6nkPlSZruqDoJtB_w9Sw_Zxw
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -1403,6 +1403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768fe280903842fdaa2a016022624f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  youtubeUrl: 
 --- !u!1 &1765102734
 GameObject:
   m_ObjectHideFlags: 0
